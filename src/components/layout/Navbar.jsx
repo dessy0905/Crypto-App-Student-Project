@@ -6,7 +6,6 @@ import { AnimatePresence } from "motion/react"
 import coinbaseLogo from "../../assets/coinbase-logo.png"
 import LanguageDropdown from "./LanguageDropdown"
 import MegaNavDropdown from "./MegaNavDropdown"
-import SearchDropdown from "../ui/SearchDropdown"
 
 const desktopNavLinks = [
   { label: "Cryptocurrencies", to: "/explore" },
