@@ -6,8 +6,11 @@ import coinbaseLogo from "../../assets/coinbase-logo.png"
 
 const Footer=() => {
   return (
-    <footer className="px-10 py-16 bg-gray-100 ">
+    <footer className="px-10 py-8 bg-gray-100 ">
       <div>
+        <div>
+          <h2 className="text-lg font-semibold text-center pb-4 mt-1 text-red-500">Disclaimer:  It is a demo project and users should not enter real personal information.</h2>
+        </div>
         <div className="md:grid grid-cols-[200px_repeat(auto-fit,minmax(220px,1fr))] gap-2 text-[17px]  mb-10">
           <div>
             <img

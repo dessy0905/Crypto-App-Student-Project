@@ -87,6 +87,11 @@ const SignUp = () => {
               What kind of account are you creating?
             </h1>
 
+            {/* Demo warning */}
+            <div className="mb-6 p-3 bg-yellow-900/30 border border-yellow-700/50 rounded-lg mx-2">
+              <p className="text-yellow-200 text-sm">⚠️ <strong>Demo app</strong> – do not use your real password</p>
+            </div>
+
             <div className="flex flex-col gap-4">
               {/* Personal Card */}
               <div

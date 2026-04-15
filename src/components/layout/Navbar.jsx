@@ -7,6 +7,7 @@ import { AnimatePresence } from "motion/react"
 import coinbaseLogo from "../../assets/coinbase-logo.png"
 import LanguageDropdown from "./LanguageDropdown"
 import MegaNavDropdown from "./MegaNavDropdown"
+import WarningBanner from "../WarningBanner"
 
 const desktopNavLinks = [
   { label: "Cryptocurrencies", to: "/explore" },
@@ -55,7 +56,9 @@ export default function Navbar() {
   const isMobile = () => window.innerWidth < 1024 // lg breakpoint
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-white border-b border-gray-200">
+    <>
+      <WarningBanner />
+      <nav className="fixed top-11 left-0 right-0 z-50 w-full bg-white border-b border-gray-200">
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-3 flex items-center justify-between gap-4">
         
@@ -289,5 +292,6 @@ export default function Navbar() {
         </div>
       )}
     </nav>
+    </>
   )
 }
